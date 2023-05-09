@@ -1,2 +1,2 @@
-# FIT
-Projekty z VUT FIT
+# Projekty z VUT FIT
+

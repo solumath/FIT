@@ -1,0 +1,526 @@
+/*
+* Login: xfajmo05
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Poppins";
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: "Poppins";
+    word-spacing: 0.4rem;
+}
+
+#header-menu > div.logo > a {
+    font-family: "Bebas Neue";
+}
+
+img {
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+/* ===================================== */
+/* ===============HEADER================ */
+/* ===================================== */
+
+#header {
+    height: 100vh;
+    min-height: 400px;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#header-menu {
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    background-color: white;
+    
+    flex-direction: column-reverse;
+    flex: 1 1 25%;
+}
+
+#header-menu > *{
+    max-width: 25%;
+}
+
+#header .contacts {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .contacts i {
+    padding-right: 5px;
+    color: #cc3636;
+}
+
+#header .networks {
+    display:inline-block;
+}
+
+#header .logo {
+    font-size: 32px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+#header nav {
+    font-size: 14px;
+    letter-spacing: .05em;
+    margin-right: 40px;
+}
+
+#header nav a{
+    text-decoration: none;
+    color: #363535;
+    margin-left: 20px;
+}
+
+#header nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#header-menu .logo a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+
+}
+
+#header-menu .logo a::first-letter {
+    color: #cc3636;
+}
+
+#header-menu .logo a:hover{
+    content: "";
+}
+
+#header-menu #tours-button ul {
+    display: none;
+}
+
+#header-title {
+    height: 80%;
+    min-height: 400px;
+    padding: 0 50px;
+}
+
+#header-form {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.heading span{
+    color: #cc3636;
+    font-family: "Bebas Neue";
+    letter-spacing: 0.4rem;
+}
+
+.heading h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* ===================================== */
+/* ================MAIN================= */
+/* ===================================== */
+
+main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    width: 100%;
+}
+
+#about .heading {
+    display: flex;
+    flex-direction: column;
+}
+
+#about img {
+    order: -1;
+    width: 40%;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+#about p {
+    width: 60%;
+}
+
+/* ================SERVICES================= */
+#services {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e8e7e7;
+}
+
+#services .section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#services h3 {
+    text-align: center;
+}
+
+#services .section-item img  {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#services .section-item:hover h3{
+    text-decoration: underline;
+    color: #cc3636;
+}
+/* ================SERVICES================= */
+
+
+.tour-stars {
+    padding-right: 5px;
+}
+
+.tour-stars::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f005";
+    color: #cc3636;
+    padding-right: 5px;
+}
+
+.tour-duration {
+    padding-right: 5px;
+}
+
+.tour-duration::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f073";
+    color: #cc3636;
+    border-left: 1px solid #363535;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.tour-price {
+    padding-right: 5px;
+}
+
+.tour-price::before {
+    font-family: "Font Awesome 6 Brands";
+    content: "\f15a";
+    color: #cc3636;
+    border-left: 1px solid #363535;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+/* ================PRICE================= */
+
+#price .section-content {
+    margin: 0px auto;
+    max-width: 1200px;
+    min-width: 768px;
+    height: 600px;
+    background-image: url(../img/huel.jpg);
+    opacity: 0.6;
+    background-size: cover;
+    transform: scaleX(-1);
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 100px 80px white;
+}
+
+#price .section-content .section-item {
+    display:block;
+    float:right;
+    margin: 20px 0;
+    padding: 20px;
+    position: relative;
+    width: 250px;
+    transform: scaleX(-1);
+    opacity: 1;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px white;
+    background-color: white;
+}
+
+#price .section-content .section-item ul {
+    list-style-type: none;
+    list-style-image: url(../img/crystal.svg);
+}
+
+#price .section-content .section-item ul li::before{
+    font-size: 10px;
+    display: inline-block;
+}
+
+/* ================PRICE================= */
+
+/* ===================================== */
+/* ===============FOOTER================ */
+/* ===================================== */
+
+footer {
+    background-color: #363535;
+    padding-top: 25px;
+}
+
+footer > div {
+    display: flex;
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto;
+    justify-content: space-between;
+    color:white;
+}
+
+footer h2 {
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    letter-spacing: 0.2rem;
+}
+
+footer h3 {
+    font-family: "Bebas Neue";
+    letter-spacing: 0.2rem;
+}
+
+#summary {
+    flex-basis: 30%;
+    padding: 0 20px;
+}
+
+#summary > div > span {
+    color: #e8e7e7;
+    font-size: 18px;
+}
+
+#summary i {
+    color: #e8e7e7;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cc3636;
+}
+
+#summary i:hover {
+    background-color: #cc3636;
+    transition: 0.5s;
+}
+
+#links {
+    flex-basis: 20% auto;
+    padding: 0 20px;
+}
+
+#links a {
+    text-decoration: none;
+    color: #e8e7e7;
+}
+
+#links a:hover {
+    text-decoration: none;
+    color: #cc3636;
+    transition: 0.5s;
+}
+
+
+#links ul {
+    list-style: none;
+    padding: 0;
+}
+
+#links ul li  {
+    padding: 3px 0;
+}
+
+#links ul li::before  {
+    content: ">";
+    margin-right: 5px;
+    color: #cc3636;
+}
+
+#contact {
+    flex-basis: 50% auto;
+    padding: 0 20px;
+}
+
+#contact div span {
+    display: block;
+}
+
+#contact div span i {
+    padding-right: 5px;
+    color: #cc3636;
+}
+
+#contact div span a {
+    text-decoration: none;
+    color: #e8e7e7;
+}
+
+#contact div span a:hover {
+    text-decoration: none;
+    color: #cc3636;
+    transition: 0.5s;
+}
+
+#contact form {
+    display: flex;
+}
+
+#contact input[type=email] {
+    padding: 10px;
+}
+#contact input:focus {
+    outline-color: blue;
+}
+
+#contact input[type=submit] {
+    background-color: #cc3636;
+    border: 0;
+    color: #e8e7e7;
+    padding: 10px;
+}
+
+#contact input[type=email]:valid + input[type=submit]:focus {
+    background-color: rgb(0, 0, 220);
+}
+
+/* Check if input is disabled then change colour of button to grey*/
+#contact input[type=email]:valid + input[type=submit]:disabled {
+    background-color: #888888;
+}
+
+/* Check if input is valid then change colour of button to blue*/
+#contact input[type=email]:valid + input[type=submit] {
+    background-color: blue;
+}
+
+#license {
+    padding: 20px 20px 20px 20px;
+}
+
+#license {
+    border-top: 1px solid #e8e7e7;
+    margin-top: 20px;
+}
+
+#license a {
+    text-decoration: none;
+    color:#e8e7e7;
+}
+
+#license a:hover {
+    text-decoration: none;
+    color:#cc3636;
+    transition: 0.5s;
+}
+
+.scrolled #jesse {
+    display: block;
+}
+
+#jesse {
+    display: none;
+    position: fixed;
+    color: #cc3636;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cc3636;
+    right: 20px;
+    bottom: 10px;
+    padding: 15px 20px;
+}
+
+#jesse:hover {
+    color:#e8e7e7;
+    background-color: #cc3636;
+    transition: 0.5s;
+}
+.open {
+    display: flex;
+    position: fixed;
+    transition: margin-top 0.5s ease-in-out;
+    background-color: blue;
+}
+
+.open:show {
+    margin-top: 40px;
+}
+
+#heisenberg {
+    display: fixed;
+    width: 300px;
+    height: 120px;
+    margin-top: 80px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+#heisenberg div {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#heisenberg img {
+    opacity: 1;
+    height: 80%;
+    width: auto;
+    border-radius: 20px;
+}
